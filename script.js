@@ -6,4 +6,6 @@ submitBtn = document.getElementById('clip-btn');
 submitBtn.addEventListener('click',function(){
     inputTextFiled.select()
     document.execCommand('Copy')
+    alert("Copied!");
+    inputTextFiled.value = "";
 })
